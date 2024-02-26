@@ -17,40 +17,50 @@
 <body>
     <div class="main-container">
         <header>
-            
                 <div class="logo">
                     <a href="#">
                         <img src="./images/logo/Booki.png" alt="Logo de Booki">
                     </a>
                 </div>
-                <div class="header-links">   
-                    <a href="#hebergement" class="">
-                        <p>Hébergements</p>
-                    </a>
-                    <a href="#" class="">
-                        <p>Activités</p>
-                    </a>
-                </div>
-            
+                    <nav class="header-links">
+                        <ul>
+                            <li>
+                                <a href="#">Hébergements</a>
+                            </li>
+                            <li>
+                                <a href="#">Activités</a>
+                            </li>
+                        </ul>   
+                    </nav>
         </header>
         <main>
             <div class="info-group">
                 <div class="box-top">
                     <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
-                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <form method="get" action="">
+                        <p>
+                            <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
+                            <input type="text" name="ville" id="ville" placeholder="Marseille, France">
+                            <button>Rechercher <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                        </p>
+                    </form>
+                </div>
         
-                    <div class="filtres">
-                        <h3>Filtres</h3>
-                        <p class="Economique"><i class="fa-solid fa-money-bill-wave"> </i> Economique</p>
-                        <p class="Familial"><i class="fa-solid fa-person"> </i> Familial</p>
-                        <p class="Romantique"><i class="fa-solid fa-heart"> </i> Romantique</p>
-                        <p class="Nospépites"><i class="fa-solid fa-fire"> </i> Nos pépites</p>
-                    </div>
+                <div class="filtres">
+                    <h3>Filtres</h3>
+                    <p class="Economique"><i class="fa-solid fa-money-bill-wave"> </i> Economique</p>
+                    <p class="Familial"><i class="fa-solid fa-person"> </i> Familial</p>
+                    <p class="Romantique"><i class="fa-solid fa-heart"> </i> Romantique</p>
+                    <p class="Nospépites"><i class="fa-solid fa-fire"> </i> Nos pépites</p>
+                </div>
         
-                    <div class="box-bottom">
-                        <p><i class="fa-solid fa-info"> </i> Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div>
+                <div class="box-bottom">
+                    <p><i class="fa-solid fa-info"> </i> Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">

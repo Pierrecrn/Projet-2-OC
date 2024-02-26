@@ -64,10 +64,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
 
-.header-links {
+.logo img {
+    width: 61px;
+    height: 19px;
+}
+
+.header-links ul {
+    list-style: none;
     display: flex;
+}
+
+.header-links li:hover {
+    border-top: 2px solid #0065FC;
+    box-sizing: content-box;
+    padding-top: 40px;
 }
 
 /******* info-group *******/
