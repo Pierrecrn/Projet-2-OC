@@ -60,13 +60,15 @@ a {
 
 /****** header ***********/
 
-/**
-.header-top {
+header {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    }
 
+.header-links {
+    display: flex;
 }
-**/
 
 /******* info-group *******/
 .filtres {
