@@ -14,6 +14,7 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -61,6 +62,8 @@ a {
 /****** header ***********/
 
 header {
+    margin: 0;
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +82,10 @@ header {
 .header-links li:hover {
     border-top: 2px solid #0065FC;
     box-sizing: content-box;
-    padding-top: 40px;
+    padding-top: 25px;
+}
+.header-links li {
+    padding-top:23px;
 }
 
 /******* info-group *******/
