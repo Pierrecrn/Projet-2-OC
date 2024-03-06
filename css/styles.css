@@ -62,43 +62,55 @@ a {
 /****** header ***********/
 
 header {
-    margin: 0;
-    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 43px;
 }
 
 .logo img {
     width: 61px;
     height: 19px;
+    padding-top: 20px;
 }
 
 .header-links ul {
     list-style: none;
+    width: 230px;
     display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
 }
 
 .header-links li:hover {
     border-top: 2px solid #0065FC;
-    box-sizing: content-box;
-    padding-top: 25px;
+    color: #0065FC;
 }
 .header-links li {
-    padding-top:23px;
+    padding-top: 23px;
 }
 
 /******* info-group *******/
+.info-group{
+    width: auto;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+}
 .search-bar {
     width: 375px;
     Height: 50px;
 }
 .search-bar label {
     width: 50px;
-    height: 50px;
+    height: auto;
     background-color:#F2F2F2;
     border: 1px solid;
     border-radius: 15px 0px 0px 15px;
+}
+.search-bar button i {
+    display: none;
 }
 .filtres {
     display: flex;
@@ -110,6 +122,7 @@ header {
     border-color: #D9D9D9;
     padding: 10px;
     margin: 10px;
+    font-weight: bold;
   }
 
 .filtres p:hover {
