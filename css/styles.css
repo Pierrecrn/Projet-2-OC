@@ -192,6 +192,7 @@ header {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 15px;
 }
 .hebergements-cards a {
     height: 225px;
