@@ -106,27 +106,33 @@ header {
     font-size: 14px;
 }
 .search-bar {
-    width: 375px;
+    max-width: 375px;
+    width: fit-content;
     display: flex;
     margin: 10px 0 15px 0;
 }
 .search-bar label {
     background-color:#F2F2F2;
-    border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     padding: 10px 15px;
+    color: black;
+}
+.search-bar label i {
     color: black;
 }
 .search-bar input {
     font-weight: 700;
     color: black;
-    border: 2px solid #F2F2F2;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
     font-size: 16px;
 }
 .search-bar button {
     background-color: #0065FC;
     border: 2px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0 15px 15px 0;
     color: white;
     font-weight: 700;
     align-items: center;
@@ -138,6 +144,7 @@ header {
 #ville {
     text-align: center;
 }
+
 .filtres {
     display: flex;
   }
@@ -389,7 +396,7 @@ footer li {
     }
 
     .activites-cards a {
-        width: 200px;
+        width: 23%;
         height: 270px;
     }
 
@@ -410,5 +417,91 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media (min-width: 320px) and (max-width: 767.98px) {
-    /*  */
+    
+    .main-container {
+        padding: 0;
+    }
+
+    /* header */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 15vh;
+    }
+    .header-links {
+        width: 100%;
+    }
+    .header-links ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .header-links li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 2vh;
+        font-size: clamp(16px, 4vw, 30px);
+    }
+    .header-links li:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    /* info group */
+
+    .info-group {
+        margin: 0 20px 0 20px;
+    }
+    .box-top {
+        text-align: justify;
+        font-size: clamp(16px, 3vw, 30px);
+    }
+    .box-top h3 {
+        margin-top: 30px;
+    }
+    .box-top p {
+        font-size: clamp(14px, 3vw, 30px);
+    }
+    .search-bar {
+        max-width: 280px;
+        border: 1px solid #F2F2F2;
+        border-radius: 20px;
+    }
+    .search-bar input {
+        border: none;
+        font-size: clamp(14px, 1.5vw, 16px);
+    }
+    .search-bar button {
+        border-radius: 15px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .search-bar button i {
+        display: unset;
+        color: white;
+    }
+    .search-bar button span {
+        display: none;
+    }
+
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filtres h4 {
+        display: block;
+        width: 100%;
+        font-size: clamp(16px, 3.5vw, 30px)
+    }
+    .filtres p {
+        font-size: clamp(14px, 1vw, 16px);
+    }
+
+    /* footer */
+
+    footer {
+        display: inline;
+    }
+    
 }
