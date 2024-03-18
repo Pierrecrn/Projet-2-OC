@@ -493,10 +493,14 @@ footer li {
     .filtres h4 {
         display: block;
         width: 100%;
-        font-size: clamp(16px, 3.5vw, 30px)
+        font-size: clamp(16px, 3.5vw, 30px);
+        margin: 15px 0 5px 0;
     }
     .filtres p {
-        font-size: clamp(14px, 1vw, 16px);
+        font-size: clamp(12px, 50%, 16px);
+        width: clamp(140px, 35%, 727px);
+        margin: 10px 10px 0 0;
+        padding-right: 0;
     }
 
     /* hebergements and populaires */
