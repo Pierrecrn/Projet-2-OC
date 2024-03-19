@@ -154,9 +154,8 @@ header {
 }
   
 .filtres p {
-    border-style: solid;
+    border: 2px solid #D9D9D9;
     border-radius: 25px;
-    border-color: #D9D9D9;
     padding: 10px;
     margin: 10px;
     font-weight: bold;
@@ -233,7 +232,7 @@ header {
     margin-bottom: 5px;
 }
 .hebergements-cards .card-rating {
-    padding-bottom: 15 px;
+    padding-bottom: 5px;
 }
 .hebergements-lien  {
     color: black;
@@ -465,14 +464,16 @@ footer li {
     .box-top p {
         font-size: clamp(14px, 3vw, 30px);
     }
-    .search-bar {
-        max-width: 280px;
+    .search-bar {   
+        max-width: 680px;
+        width: 100%;
         border: 1px solid #F2F2F2;
         border-radius: 20px;
     }
     .search-bar input {
         border: none;
-        font-size: clamp(14px, 1.5vw, 16px);
+        font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
+        width: 100%;
     }
     .search-bar button {
         border-radius: 15px;
@@ -487,20 +488,22 @@ footer li {
     }
 
     .filtres {
-        display: flex;
         flex-wrap: wrap;
+        gap: 10px;
     }
     .filtres h4 {
         display: block;
         width: 100%;
-        font-size: clamp(16px, 3.5vw, 30px);
+        font-size: clamp(16px, 3vw, 30px);
         margin: 15px 0 5px 0;
     }
     .filtres p {
-        font-size: clamp(12px, 50%, 16px);
-        width: clamp(140px, 35%, 727px);
-        margin: 10px 10px 0 0;
+        font-size: clamp(12px, 1.5vw, 16px);
+        width: clamp(7.5rem, 49.107vw - 2.321rem, 21.25rem);
+         /* width: clamp(100px, 43%, 727px); */
+        margin: 0;
         padding-right: 0;
+        text-align: center;
     }
 
     /* hebergements and populaires */
@@ -570,5 +573,8 @@ footer li {
     footer li {
         padding-top: 5px;
     }
+     footer nav:nth-child(3) {
+        padding-bottom: 20px;
+     }
     
 }
