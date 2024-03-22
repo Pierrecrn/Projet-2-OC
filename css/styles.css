@@ -67,6 +67,11 @@ header {
     height: 43px;
 }
 
+h1 {
+    text-indent: -3333px;
+    line-height: 0;
+    margin: 0;
+}
 .logo img {
     width: 61px;
     height: 19px;
@@ -97,7 +102,8 @@ header {
     display: flex;
     flex-direction: column;
 }
-.box-top h3 {
+.box-top h2 {
+    font-size: 22px;
     margin-top: 40px;
     margin-bottom: 0;
 }
@@ -154,9 +160,8 @@ header {
 }
   
 .filtres p {
-    border-style: solid;
+    border: 2px solid #D9D9D9;
     border-radius: 25px;
-    border-color: #D9D9D9;
     padding: 10px;
     margin: 10px;
     font-weight: bold;
@@ -233,7 +238,7 @@ header {
     margin-bottom: 5px;
 }
 .hebergements-cards .card-rating {
-    padding-bottom: 15 px;
+    padding-bottom: 5px;
 }
 .hebergements-lien  {
     color: black;
@@ -337,7 +342,9 @@ footer ul {
     padding: 0;
     margin-top: 0;
 }
-footer h4 {
+footer p {
+    font-size: 18px;
+    font-weight: 700;
     margin-bottom: 0;
 }
 footer li {
@@ -350,6 +357,11 @@ footer li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .box-top h2 {
+        font-size: 20px;
+        margin-top: 3rem;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -428,7 +440,7 @@ footer li {
     header {
         display: flex;
         flex-direction: column;
-        height: 15vh;
+        height: clamp(7.188rem, 3.348vw + 6.518rem, 8.125rem);
     }
     .header-links {
         width: 100%;
@@ -444,7 +456,7 @@ footer li {
 
         border-bottom: 2px solid #F2F2F2;
         padding-bottom: 2vh;
-        font-size: clamp(16px, 4vw, 30px);
+        font-size: clamp(0.875rem, 0.6071rem + 1.3393vw, 1.25rem);
     }
     .header-links li:hover {
         border-top: none;
@@ -457,22 +469,24 @@ footer li {
     }
     .box-top {
         text-align: justify;
-        font-size: clamp(16px, 3vw, 30px);
     }
-    .box-top h3 {
+    .box-top h2 {
+        font-size: clamp(1.125rem, 0.9464rem + 0.8929vw, 1.375rem);
         margin-top: 30px;
     }
     .box-top p {
-        font-size: clamp(14px, 3vw, 30px);
+        font-size: clamp(0.875rem, 0.6964rem + 0.8929vw, 1.125rem);
     }
-    .search-bar {
-        max-width: 280px;
+    .search-bar {   
+        max-width: 680px;
+        width: 100%;
         border: 1px solid #F2F2F2;
         border-radius: 20px;
     }
     .search-bar input {
         border: none;
-        font-size: clamp(14px, 1.5vw, 16px);
+        font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
+        width: 100%;
     }
     .search-bar button {
         border-radius: 15px;
@@ -487,16 +501,21 @@ footer li {
     }
 
     .filtres {
-        display: flex;
         flex-wrap: wrap;
+        gap: 10px;
     }
-    .filtres h4 {
+    .filtres h3 {
         display: block;
         width: 100%;
-        font-size: clamp(16px, 3.5vw, 30px)
+        font-size: 18px;
+        margin: 15px 0 5px 0;
     }
     .filtres p {
-        font-size: clamp(14px, 1vw, 16px);
+        font-size: clamp(0.75rem, 0.6607rem + 0.4464vw, 0.875rem);
+        width: clamp(7rem, 47.545vw - 2.509rem, 20.313rem);
+        margin: 0;
+        padding-right: 0;
+        text-align: center;
     }
 
     /* hebergements and populaires */
@@ -557,7 +576,7 @@ footer li {
     footer {
         flex-direction: column;
     }
-    footer h4 {
+    footer p {
         margin-top: 25px;
     }
     footer ul {
@@ -566,5 +585,8 @@ footer li {
     footer li {
         padding-top: 5px;
     }
+     footer nav:nth-child(3) {
+        padding-bottom: 20px;
+     }
     
 }
