@@ -469,7 +469,6 @@ footer li {
     }
     .box-top {
         text-align: justify;
-        font-size: clamp(16px, 3vw, 30px);
     }
     .box-top h2 {
         font-size: clamp(1.125rem, 0.9464rem + 0.8929vw, 1.375rem);
