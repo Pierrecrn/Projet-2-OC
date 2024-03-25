@@ -67,11 +67,6 @@ header {
     height: 43px;
 }
 
-h1 {
-    text-indent: -3333px;
-    line-height: 0;
-    margin: 0;
-}
 .logo img {
     width: 61px;
     height: 19px;
@@ -102,7 +97,7 @@ h1 {
     display: flex;
     flex-direction: column;
 }
-.box-top h2 {
+.box-top h1 {
     font-size: 22px;
     margin-top: 40px;
     margin-bottom: 0;
@@ -358,7 +353,7 @@ footer li {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-    .box-top h2 {
+    .box-top h1 {
         font-size: 20px;
         margin-top: 3rem;
     }
@@ -470,7 +465,7 @@ footer li {
     .box-top {
         text-align: justify;
     }
-    .box-top h2 {
+    .box-top h1 {
         font-size: clamp(1.125rem, 0.9464rem + 0.8929vw, 1.375rem);
         margin-top: 30px;
     }
@@ -568,7 +563,6 @@ footer li {
         padding: 0;
     }
     .activites-cards img {
-
         height: 140px;
     }
     /* footer */
